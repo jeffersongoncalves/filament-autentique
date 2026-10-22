@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'दस्तावेज़',
+        'plural_label' => 'दस्तावेज़',
+        'fields' => [
+            'name' => 'नाम',
+            'status' => 'स्थिति',
+            'signatures' => 'हस्ताक्षर',
+            'sandbox' => 'सैंडबॉक्स',
+            'autentique_id' => 'Autentique ID',
+            'documentable' => 'से जुड़ा',
+            'created_at' => 'बनाया गया',
+            'finished_at' => 'पूरा हुआ',
+            'file' => 'फ़ाइल',
+            'message' => 'हस्ताक्षरकर्ताओं के लिए संदेश',
+            'signers' => 'हस्ताक्षरकर्ता',
+            'email' => 'ईमेल',
+            'signer_name' => 'नाम (हस्ताक्षर लिंक, बिना ईमेल)',
+            'action' => 'कार्रवाई',
+            'refusable' => 'हस्ताक्षरकर्ता अस्वीकार कर सकते हैं',
+            'sortable' => 'ऊपर दिए क्रम में हस्ताक्षर करें',
+        ],
+        'status' => [
+            'pending' => 'लंबित',
+            'signed' => 'हस्ताक्षरित',
+            'rejected' => 'अस्वीकृत',
+        ],
+    ],
+    'signature' => [
+        'label' => 'हस्ताक्षरकर्ता',
+        'plural_label' => 'हस्ताक्षरकर्ता',
+        'fields' => [
+            'name' => 'नाम',
+            'email' => 'ईमेल',
+            'action' => 'कार्रवाई',
+            'link' => 'हस्ताक्षर लिंक',
+            'viewed_at' => 'देखा गया',
+            'signed_at' => 'हस्ताक्षर किए गए',
+            'rejected_at' => 'अस्वीकार किया गया',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'हस्ताक्षर करें',
+        'SIGN_AS_A_WITNESS' => 'गवाह के रूप में हस्ताक्षर करें',
+        'APPROVE' => 'स्वीकृत करें',
+        'RECOGNIZE' => 'अवगत होने की पुष्टि करें',
+    ],
+    'webhook_call' => [
+        'label' => 'वेबहुक कॉल',
+        'plural_label' => 'वेबहुक कॉल्स',
+        'fields' => [
+            'event_id' => 'इवेंट',
+            'type' => 'प्रकार',
+            'processed' => 'संसाधित',
+            'exception' => 'त्रुटि',
+            'created_at' => 'प्राप्त हुआ',
+        ],
+        'filters' => [
+            'failed' => 'विफल',
+        ],
+    ],
+    'actions' => [
+        'send' => 'दस्तावेज़ भेजें',
+        'sync' => 'सिंक करें',
+        'download' => 'हस्ताक्षरित PDF',
+        'resend' => 'फिर से भेजें',
+        'create_link' => 'लिंक बनाएँ',
+        'reprocess' => 'फिर से संसाधित करें',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'दस्तावेज़ कतार में है: Autentique को मिलते ही यह यहाँ दिखेगा।',
+        'synced' => 'सिंक कतार में जोड़ा गया।',
+        'resent' => 'हस्ताक्षर अनुरोध फिर से भेजा गया।',
+        'link_created' => 'हस्ताक्षर लिंक बनाया गया।',
+        'reprocessed' => 'वेबहुक प्रोसेसिंग के लिए कतार में जोड़ा गया।',
+        'failed' => 'Autentique ने एक त्रुटि लौटाई',
+    ],
+];

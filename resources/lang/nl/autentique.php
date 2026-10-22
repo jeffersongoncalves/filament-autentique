@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Document',
+        'plural_label' => 'Documenten',
+        'fields' => [
+            'name' => 'Naam',
+            'status' => 'Status',
+            'signatures' => 'Ondertekeningen',
+            'sandbox' => 'Sandbox',
+            'autentique_id' => 'Autentique-ID',
+            'documentable' => 'Gekoppeld aan',
+            'created_at' => 'Aangemaakt op',
+            'finished_at' => 'Afgerond op',
+            'file' => 'Bestand',
+            'message' => 'Bericht aan ondertekenaars',
+            'signers' => 'Ondertekenaars',
+            'email' => 'E-mail',
+            'signer_name' => 'Naam (ondertekeningslink, zonder e-mail)',
+            'action' => 'Actie',
+            'refusable' => 'Ondertekenaars mogen weigeren',
+            'sortable' => 'Ondertekenen in bovenstaande volgorde',
+        ],
+        'status' => [
+            'pending' => 'In afwachting',
+            'signed' => 'Ondertekend',
+            'rejected' => 'Geweigerd',
+        ],
+    ],
+    'signature' => [
+        'label' => 'Ondertekenaar',
+        'plural_label' => 'Ondertekenaars',
+        'fields' => [
+            'name' => 'Naam',
+            'email' => 'E-mail',
+            'action' => 'Actie',
+            'link' => 'Ondertekeningslink',
+            'viewed_at' => 'Bekeken op',
+            'signed_at' => 'Ondertekend op',
+            'rejected_at' => 'Geweigerd op',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'Ondertekenen',
+        'SIGN_AS_A_WITNESS' => 'Ondertekenen als getuige',
+        'APPROVE' => 'Goedkeuren',
+        'RECOGNIZE' => 'Voor gezien tekenen',
+    ],
+    'webhook_call' => [
+        'label' => 'Webhook-aanroep',
+        'plural_label' => 'Webhook-aanroepen',
+        'fields' => [
+            'event_id' => 'Gebeurtenis',
+            'type' => 'Type',
+            'processed' => 'Verwerkt',
+            'exception' => 'Fout',
+            'created_at' => 'Ontvangen op',
+        ],
+        'filters' => [
+            'failed' => 'Mislukt',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Document versturen',
+        'sync' => 'Synchroniseren',
+        'download' => 'Ondertekende PDF',
+        'resend' => 'Opnieuw versturen',
+        'create_link' => 'Link aanmaken',
+        'reprocess' => 'Opnieuw verwerken',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Document in de wachtrij: het verschijnt hier zodra Autentique het heeft ontvangen.',
+        'synced' => 'Synchronisatie in de wachtrij.',
+        'resent' => 'Ondertekeningsverzoek opnieuw verstuurd.',
+        'link_created' => 'Ondertekeningslink aangemaakt.',
+        'reprocessed' => 'Webhook in de wachtrij voor verwerking.',
+        'failed' => 'Autentique gaf een fout terug',
+    ],
+];

@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => '文档',
+        'plural_label' => '文档',
+        'fields' => [
+            'name' => '名称',
+            'status' => '状态',
+            'signatures' => '签署',
+            'sandbox' => '沙盒',
+            'autentique_id' => 'Autentique ID',
+            'documentable' => '关联到',
+            'created_at' => '创建时间',
+            'finished_at' => '完成时间',
+            'file' => '文件',
+            'message' => '给签署人的消息',
+            'signers' => '签署人',
+            'email' => '电子邮件',
+            'signer_name' => '姓名（签署链接，无电子邮件）',
+            'action' => '操作',
+            'refusable' => '允许签署人拒绝',
+            'sortable' => '按上述顺序签署',
+        ],
+        'status' => [
+            'pending' => '待签署',
+            'signed' => '已签署',
+            'rejected' => '已拒绝',
+        ],
+    ],
+    'signature' => [
+        'label' => '签署人',
+        'plural_label' => '签署人',
+        'fields' => [
+            'name' => '姓名',
+            'email' => '电子邮件',
+            'action' => '操作',
+            'link' => '签署链接',
+            'viewed_at' => '查看时间',
+            'signed_at' => '签署时间',
+            'rejected_at' => '拒绝时间',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => '签署',
+        'SIGN_AS_A_WITNESS' => '作为见证人签署',
+        'APPROVE' => '批准',
+        'RECOGNIZE' => '确认知悉',
+    ],
+    'webhook_call' => [
+        'label' => 'Webhook 调用',
+        'plural_label' => 'Webhook 调用',
+        'fields' => [
+            'event_id' => '事件',
+            'type' => '类型',
+            'processed' => '已处理',
+            'exception' => '错误',
+            'created_at' => '接收时间',
+        ],
+        'filters' => [
+            'failed' => '失败',
+        ],
+    ],
+    'actions' => [
+        'send' => '发送文档',
+        'sync' => '同步',
+        'download' => '已签署 PDF',
+        'resend' => '重新发送',
+        'create_link' => '创建链接',
+        'reprocess' => '重新处理',
+        'payload' => '负载',
+    ],
+    'notifications' => [
+        'queued' => '文档已加入队列：Autentique 收到后会显示在这里。',
+        'synced' => '同步已加入队列。',
+        'resent' => '签署请求已重新发送。',
+        'link_created' => '签署链接已创建。',
+        'reprocessed' => 'Webhook 已加入处理队列。',
+        'failed' => 'Autentique 返回了错误',
+    ],
+];

@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'ドキュメント',
+        'plural_label' => 'ドキュメント',
+        'fields' => [
+            'name' => '名前',
+            'status' => 'ステータス',
+            'signatures' => '署名',
+            'sandbox' => 'サンドボックス',
+            'autentique_id' => 'Autentique ID',
+            'documentable' => '関連レコード',
+            'created_at' => '作成日時',
+            'finished_at' => '完了日時',
+            'file' => 'ファイル',
+            'message' => '署名者へのメッセージ',
+            'signers' => '署名者',
+            'email' => 'メールアドレス',
+            'signer_name' => '名前（署名リンク、メールなし）',
+            'action' => 'アクション',
+            'refusable' => '署名者による拒否を許可',
+            'sortable' => '上記の順番で署名',
+        ],
+        'status' => [
+            'pending' => '保留中',
+            'signed' => '署名済み',
+            'rejected' => '拒否済み',
+        ],
+    ],
+    'signature' => [
+        'label' => '署名者',
+        'plural_label' => '署名者',
+        'fields' => [
+            'name' => '名前',
+            'email' => 'メールアドレス',
+            'action' => 'アクション',
+            'link' => '署名リンク',
+            'viewed_at' => '閲覧日時',
+            'signed_at' => '署名日時',
+            'rejected_at' => '拒否日時',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => '署名',
+        'SIGN_AS_A_WITNESS' => '証人として署名',
+        'APPROVE' => '承認',
+        'RECOGNIZE' => '確認',
+    ],
+    'webhook_call' => [
+        'label' => 'Webhook 呼び出し',
+        'plural_label' => 'Webhook 呼び出し',
+        'fields' => [
+            'event_id' => 'イベント',
+            'type' => '種類',
+            'processed' => '処理済み',
+            'exception' => 'エラー',
+            'created_at' => '受信日時',
+        ],
+        'filters' => [
+            'failed' => '失敗',
+        ],
+    ],
+    'actions' => [
+        'send' => 'ドキュメントを送信',
+        'sync' => '同期',
+        'download' => '署名済み PDF',
+        'resend' => '再送信',
+        'create_link' => 'リンクを作成',
+        'reprocess' => '再処理',
+        'payload' => 'ペイロード',
+    ],
+    'notifications' => [
+        'queued' => 'ドキュメントをキューに追加しました。Autentique が受信するとここに表示されます。',
+        'synced' => '同期をキューに追加しました。',
+        'resent' => '署名依頼を再送信しました。',
+        'link_created' => '署名リンクを作成しました。',
+        'reprocessed' => 'Webhook を処理キューに追加しました。',
+        'failed' => 'Autentique がエラーを返しました',
+    ],
+];

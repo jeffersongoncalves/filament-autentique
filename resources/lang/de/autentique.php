@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Dokument',
+        'plural_label' => 'Dokumente',
+        'fields' => [
+            'name' => 'Name',
+            'status' => 'Status',
+            'signatures' => 'Signaturen',
+            'sandbox' => 'Sandbox',
+            'autentique_id' => 'Autentique-ID',
+            'documentable' => 'Verknüpft mit',
+            'created_at' => 'Erstellt am',
+            'finished_at' => 'Abgeschlossen am',
+            'file' => 'Datei',
+            'message' => 'Nachricht an die Unterzeichner',
+            'signers' => 'Unterzeichner',
+            'email' => 'E-Mail',
+            'signer_name' => 'Name (Signaturlink, ohne E-Mail)',
+            'action' => 'Aktion',
+            'refusable' => 'Unterzeichner dürfen ablehnen',
+            'sortable' => 'In obiger Reihenfolge unterschreiben',
+        ],
+        'status' => [
+            'pending' => 'Ausstehend',
+            'signed' => 'Unterschrieben',
+            'rejected' => 'Abgelehnt',
+        ],
+    ],
+    'signature' => [
+        'label' => 'Unterzeichner',
+        'plural_label' => 'Unterzeichner',
+        'fields' => [
+            'name' => 'Name',
+            'email' => 'E-Mail',
+            'action' => 'Aktion',
+            'link' => 'Signaturlink',
+            'viewed_at' => 'Angesehen am',
+            'signed_at' => 'Unterschrieben am',
+            'rejected_at' => 'Abgelehnt am',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'Unterschreiben',
+        'SIGN_AS_A_WITNESS' => 'Als Zeuge unterschreiben',
+        'APPROVE' => 'Genehmigen',
+        'RECOGNIZE' => 'Zur Kenntnis nehmen',
+    ],
+    'webhook_call' => [
+        'label' => 'Webhook-Aufruf',
+        'plural_label' => 'Webhook-Aufrufe',
+        'fields' => [
+            'event_id' => 'Ereignis',
+            'type' => 'Typ',
+            'processed' => 'Verarbeitet',
+            'exception' => 'Fehler',
+            'created_at' => 'Empfangen am',
+        ],
+        'filters' => [
+            'failed' => 'Fehlgeschlagen',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Dokument senden',
+        'sync' => 'Synchronisieren',
+        'download' => 'Signiertes PDF',
+        'resend' => 'Erneut senden',
+        'create_link' => 'Link erstellen',
+        'reprocess' => 'Erneut verarbeiten',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Dokument in der Warteschlange: Es erscheint hier, sobald Autentique es erhalten hat.',
+        'synced' => 'Synchronisierung in der Warteschlange.',
+        'resent' => 'Signaturanfrage erneut gesendet.',
+        'link_created' => 'Signaturlink erstellt.',
+        'reprocessed' => 'Webhook zur Verarbeitung eingereiht.',
+        'failed' => 'Autentique hat einen Fehler zurückgegeben',
+    ],
+];
