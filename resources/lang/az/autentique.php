@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Sənəd',
+        'plural_label' => 'Sənədlər',
+        'fields' => [
+            'name' => 'Ad',
+            'status' => 'Status',
+            'signatures' => 'İmzalar',
+            'sandbox' => 'Sandbox',
+            'autentique_id' => 'Autentique ID',
+            'documentable' => 'Bağlı qeyd',
+            'created_at' => 'Yaradılma tarixi',
+            'finished_at' => 'Tamamlanma tarixi',
+            'file' => 'Fayl',
+            'message' => 'İmzalayanlara mesaj',
+            'signers' => 'İmzalayanlar',
+            'email' => 'E-poçt',
+            'signer_name' => 'Ad (imza linki, e-poçtsuz)',
+            'action' => 'Əməliyyat',
+            'refusable' => 'İmzalayanlar rədd edə bilər',
+            'sortable' => 'Yuxarıdakı ardıcıllıqla imzalamaq',
+        ],
+        'status' => [
+            'pending' => 'Gözləmədə',
+            'signed' => 'İmzalanıb',
+            'rejected' => 'Rədd edilib',
+        ],
+    ],
+    'signature' => [
+        'label' => 'İmzalayan',
+        'plural_label' => 'İmzalayanlar',
+        'fields' => [
+            'name' => 'Ad',
+            'email' => 'E-poçt',
+            'action' => 'Əməliyyat',
+            'link' => 'İmza linki',
+            'viewed_at' => 'Baxılma tarixi',
+            'signed_at' => 'İmzalanma tarixi',
+            'rejected_at' => 'Rədd edilmə tarixi',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'İmzalamaq',
+        'SIGN_AS_A_WITNESS' => 'Şahid kimi imzalamaq',
+        'APPROVE' => 'Təsdiqləmək',
+        'RECOGNIZE' => 'Tanış olmaq',
+    ],
+    'webhook_call' => [
+        'label' => 'Webhook çağırışı',
+        'plural_label' => 'Webhook çağırışları',
+        'fields' => [
+            'event_id' => 'Hadisə',
+            'type' => 'Növ',
+            'processed' => 'Emal edilib',
+            'exception' => 'Xəta',
+            'created_at' => 'Alınma tarixi',
+        ],
+        'filters' => [
+            'failed' => 'Xətalı',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Sənəd göndər',
+        'sync' => 'Sinxronlaşdır',
+        'download' => 'İmzalanmış PDF',
+        'resend' => 'Yenidən göndər',
+        'create_link' => 'Link yarat',
+        'reprocess' => 'Yenidən emal et',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Sənəd növbədədir: Autentique onu qəbul edən kimi burada görünəcək.',
+        'synced' => 'Sinxronlaşdırma növbəyə əlavə edildi.',
+        'resent' => 'İmza sorğusu yenidən göndərildi.',
+        'link_created' => 'İmza linki yaradıldı.',
+        'reprocessed' => 'Webhook emal üçün növbəyə əlavə edildi.',
+        'failed' => 'Autentique xəta qaytardı',
+    ],
+];

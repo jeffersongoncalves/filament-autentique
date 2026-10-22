@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Dokument',
+        'plural_label' => 'Dokumenty',
+        'fields' => [
+            'name' => 'Nazwa',
+            'status' => 'Status',
+            'signatures' => 'Podpisy',
+            'sandbox' => 'Sandbox',
+            'autentique_id' => 'ID w Autentique',
+            'documentable' => 'Powiązany z',
+            'created_at' => 'Utworzono',
+            'finished_at' => 'Zakończono',
+            'file' => 'Plik',
+            'message' => 'Wiadomość dla podpisujących',
+            'signers' => 'Podpisujący',
+            'email' => 'E-mail',
+            'signer_name' => 'Imię i nazwisko (link do podpisu, bez e-maila)',
+            'action' => 'Akcja',
+            'refusable' => 'Podpisujący mogą odrzucić',
+            'sortable' => 'Podpisywanie w powyższej kolejności',
+        ],
+        'status' => [
+            'pending' => 'Oczekujący',
+            'signed' => 'Podpisany',
+            'rejected' => 'Odrzucony',
+        ],
+    ],
+    'signature' => [
+        'label' => 'Podpisujący',
+        'plural_label' => 'Podpisujący',
+        'fields' => [
+            'name' => 'Imię i nazwisko',
+            'email' => 'E-mail',
+            'action' => 'Akcja',
+            'link' => 'Link do podpisu',
+            'viewed_at' => 'Wyświetlono',
+            'signed_at' => 'Podpisano',
+            'rejected_at' => 'Odrzucono',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'Podpisz',
+        'SIGN_AS_A_WITNESS' => 'Podpisz jako świadek',
+        'APPROVE' => 'Zatwierdź',
+        'RECOGNIZE' => 'Potwierdź zapoznanie się',
+    ],
+    'webhook_call' => [
+        'label' => 'Wywołanie webhooka',
+        'plural_label' => 'Wywołania webhooka',
+        'fields' => [
+            'event_id' => 'Zdarzenie',
+            'type' => 'Typ',
+            'processed' => 'Przetworzono',
+            'exception' => 'Błąd',
+            'created_at' => 'Odebrano',
+        ],
+        'filters' => [
+            'failed' => 'Z błędem',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Wyślij dokument',
+        'sync' => 'Synchronizuj',
+        'download' => 'Podpisany PDF',
+        'resend' => 'Wyślij ponownie',
+        'create_link' => 'Utwórz link',
+        'reprocess' => 'Przetwórz ponownie',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Dokument w kolejce: pojawi się tutaj, gdy Autentique go otrzyma.',
+        'synced' => 'Synchronizacja w kolejce.',
+        'resent' => 'Prośba o podpis wysłana ponownie.',
+        'link_created' => 'Link do podpisu utworzony.',
+        'reprocessed' => 'Webhook dodany do kolejki przetwarzania.',
+        'failed' => 'Autentique zwrócił błąd',
+    ],
+];

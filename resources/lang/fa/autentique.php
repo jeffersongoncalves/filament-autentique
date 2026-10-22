@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'سند',
+        'plural_label' => 'اسناد',
+        'fields' => [
+            'name' => 'نام',
+            'status' => 'وضعیت',
+            'signatures' => 'امضاها',
+            'sandbox' => 'سندباکس',
+            'autentique_id' => 'شناسه Autentique',
+            'documentable' => 'مرتبط با',
+            'created_at' => 'ایجاد شده در',
+            'finished_at' => 'تکمیل شده در',
+            'file' => 'فایل',
+            'message' => 'پیام به امضاکنندگان',
+            'signers' => 'امضاکنندگان',
+            'email' => 'ایمیل',
+            'signer_name' => 'نام (لینک امضا، بدون ایمیل)',
+            'action' => 'اقدام',
+            'refusable' => 'امضاکنندگان می‌توانند رد کنند',
+            'sortable' => 'امضا به ترتیب بالا',
+        ],
+        'status' => [
+            'pending' => 'در انتظار',
+            'signed' => 'امضا شده',
+            'rejected' => 'رد شده',
+        ],
+    ],
+    'signature' => [
+        'label' => 'امضاکننده',
+        'plural_label' => 'امضاکنندگان',
+        'fields' => [
+            'name' => 'نام',
+            'email' => 'ایمیل',
+            'action' => 'اقدام',
+            'link' => 'لینک امضا',
+            'viewed_at' => 'مشاهده شده در',
+            'signed_at' => 'امضا شده در',
+            'rejected_at' => 'رد شده در',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'امضا',
+        'SIGN_AS_A_WITNESS' => 'امضا به عنوان شاهد',
+        'APPROVE' => 'تأیید',
+        'RECOGNIZE' => 'اطلاع یافتن',
+    ],
+    'webhook_call' => [
+        'label' => 'فراخوانی وب‌هوک',
+        'plural_label' => 'فراخوانی‌های وب‌هوک',
+        'fields' => [
+            'event_id' => 'رویداد',
+            'type' => 'نوع',
+            'processed' => 'پردازش شده',
+            'exception' => 'خطا',
+            'created_at' => 'دریافت شده در',
+        ],
+        'filters' => [
+            'failed' => 'ناموفق',
+        ],
+    ],
+    'actions' => [
+        'send' => 'ارسال سند',
+        'sync' => 'همگام‌سازی',
+        'download' => 'PDF امضا شده',
+        'resend' => 'ارسال مجدد',
+        'create_link' => 'ایجاد لینک',
+        'reprocess' => 'پردازش مجدد',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'سند در صف است: به محض دریافت توسط Autentique اینجا نمایش داده می‌شود.',
+        'synced' => 'همگام‌سازی در صف قرار گرفت.',
+        'resent' => 'درخواست امضا دوباره ارسال شد.',
+        'link_created' => 'لینک امضا ایجاد شد.',
+        'reprocessed' => 'وب‌هوک برای پردازش در صف قرار گرفت.',
+        'failed' => 'Autentique خطا برگرداند',
+    ],
+];

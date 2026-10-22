@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Hujjat',
+        'plural_label' => 'Hujjatlar',
+        'fields' => [
+            'name' => 'Nomi',
+            'status' => 'Holati',
+            'signatures' => 'Imzolar',
+            'sandbox' => 'Sandbox',
+            'autentique_id' => 'Autentique ID',
+            'documentable' => 'Bogʻlangan yozuv',
+            'created_at' => 'Yaratilgan',
+            'finished_at' => 'Yakunlangan',
+            'file' => 'Fayl',
+            'message' => 'Imzolovchilarga xabar',
+            'signers' => 'Imzolovchilar',
+            'email' => 'Elektron pochta',
+            'signer_name' => 'Ism (imzo havolasi, elektron pochtasiz)',
+            'action' => 'Amal',
+            'refusable' => 'Imzolovchilar rad etishi mumkin',
+            'sortable' => 'Yuqoridagi tartibda imzolash',
+        ],
+        'status' => [
+            'pending' => 'Kutilmoqda',
+            'signed' => 'Imzolangan',
+            'rejected' => 'Rad etilgan',
+        ],
+    ],
+    'signature' => [
+        'label' => 'Imzolovchi',
+        'plural_label' => 'Imzolovchilar',
+        'fields' => [
+            'name' => 'Ism',
+            'email' => 'Elektron pochta',
+            'action' => 'Amal',
+            'link' => 'Imzo havolasi',
+            'viewed_at' => 'Koʻrilgan',
+            'signed_at' => 'Imzolangan',
+            'rejected_at' => 'Rad etilgan',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'Imzolash',
+        'SIGN_AS_A_WITNESS' => 'Guvoh sifatida imzolash',
+        'APPROVE' => 'Tasdiqlash',
+        'RECOGNIZE' => 'Tanishib chiqish',
+    ],
+    'webhook_call' => [
+        'label' => 'Webhook chaqiruvi',
+        'plural_label' => 'Webhook chaqiruvlari',
+        'fields' => [
+            'event_id' => 'Hodisa',
+            'type' => 'Turi',
+            'processed' => 'Ishlov berilgan',
+            'exception' => 'Xato',
+            'created_at' => 'Qabul qilingan',
+        ],
+        'filters' => [
+            'failed' => 'Xatolik bilan',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Hujjat yuborish',
+        'sync' => 'Sinxronlash',
+        'download' => 'Imzolangan PDF',
+        'resend' => 'Qayta yuborish',
+        'create_link' => 'Havola yaratish',
+        'reprocess' => 'Qayta ishlash',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Hujjat navbatda: Autentique uni qabul qilishi bilan shu yerda paydo boʻladi.',
+        'synced' => 'Sinxronlash navbatga qoʻyildi.',
+        'resent' => 'Imzo soʻrovi qayta yuborildi.',
+        'link_created' => 'Imzo havolasi yaratildi.',
+        'reprocessed' => 'Webhook qayta ishlash uchun navbatga qoʻyildi.',
+        'failed' => 'Autentique xato qaytardi',
+    ],
+];
