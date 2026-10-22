@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Документ',
+        'plural_label' => 'Документы',
+        'fields' => [
+            'name' => 'Название',
+            'status' => 'Статус',
+            'signatures' => 'Подписи',
+            'sandbox' => 'Песочница',
+            'autentique_id' => 'ID в Autentique',
+            'documentable' => 'Связан с',
+            'created_at' => 'Создан',
+            'finished_at' => 'Завершён',
+            'file' => 'Файл',
+            'message' => 'Сообщение подписантам',
+            'signers' => 'Подписанты',
+            'email' => 'Эл. почта',
+            'signer_name' => 'Имя (ссылка для подписи, без эл. почты)',
+            'action' => 'Действие',
+            'refusable' => 'Подписанты могут отклонить',
+            'sortable' => 'Подписывать в указанном порядке',
+        ],
+        'status' => [
+            'pending' => 'Ожидает',
+            'signed' => 'Подписан',
+            'rejected' => 'Отклонён',
+        ],
+    ],
+    'signature' => [
+        'label' => 'Подписант',
+        'plural_label' => 'Подписанты',
+        'fields' => [
+            'name' => 'Имя',
+            'email' => 'Эл. почта',
+            'action' => 'Действие',
+            'link' => 'Ссылка для подписи',
+            'viewed_at' => 'Просмотрено',
+            'signed_at' => 'Подписано',
+            'rejected_at' => 'Отклонено',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'Подписать',
+        'SIGN_AS_A_WITNESS' => 'Подписать как свидетель',
+        'APPROVE' => 'Утвердить',
+        'RECOGNIZE' => 'Ознакомиться',
+    ],
+    'webhook_call' => [
+        'label' => 'Вызов вебхука',
+        'plural_label' => 'Вызовы вебхуков',
+        'fields' => [
+            'event_id' => 'Событие',
+            'type' => 'Тип',
+            'processed' => 'Обработан',
+            'exception' => 'Ошибка',
+            'created_at' => 'Получен',
+        ],
+        'filters' => [
+            'failed' => 'С ошибкой',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Отправить документ',
+        'sync' => 'Синхронизировать',
+        'download' => 'Подписанный PDF',
+        'resend' => 'Отправить повторно',
+        'create_link' => 'Создать ссылку',
+        'reprocess' => 'Обработать повторно',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Документ в очереди: он появится здесь, как только Autentique его получит.',
+        'synced' => 'Синхронизация поставлена в очередь.',
+        'resent' => 'Запрос на подпись отправлен повторно.',
+        'link_created' => 'Ссылка для подписи создана.',
+        'reprocessed' => 'Вебхук поставлен в очередь на обработку.',
+        'failed' => 'Autentique вернул ошибку',
+    ],
+];

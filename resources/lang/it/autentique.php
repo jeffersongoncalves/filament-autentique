@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Documento',
+        'plural_label' => 'Documenti',
+        'fields' => [
+            'name' => 'Nome',
+            'status' => 'Stato',
+            'signatures' => 'Firme',
+            'sandbox' => 'Sandbox',
+            'autentique_id' => 'ID Autentique',
+            'documentable' => 'Collegato a',
+            'created_at' => 'Creato il',
+            'finished_at' => 'Completato il',
+            'file' => 'File',
+            'message' => 'Messaggio ai firmatari',
+            'signers' => 'Firmatari',
+            'email' => 'Email',
+            'signer_name' => 'Nome (link di firma, senza email)',
+            'action' => 'Azione',
+            'refusable' => 'I firmatari possono rifiutare',
+            'sortable' => 'Firmare nell\'ordine indicato',
+        ],
+        'status' => [
+            'pending' => 'In attesa',
+            'signed' => 'Firmato',
+            'rejected' => 'Rifiutato',
+        ],
+    ],
+    'signature' => [
+        'label' => 'Firmatario',
+        'plural_label' => 'Firmatari',
+        'fields' => [
+            'name' => 'Nome',
+            'email' => 'Email',
+            'action' => 'Azione',
+            'link' => 'Link di firma',
+            'viewed_at' => 'Visualizzato il',
+            'signed_at' => 'Firmato il',
+            'rejected_at' => 'Rifiutato il',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'Firmare',
+        'SIGN_AS_A_WITNESS' => 'Firmare come testimone',
+        'APPROVE' => 'Approvare',
+        'RECOGNIZE' => 'Prendere visione',
+    ],
+    'webhook_call' => [
+        'label' => 'Chiamata webhook',
+        'plural_label' => 'Chiamate webhook',
+        'fields' => [
+            'event_id' => 'Evento',
+            'type' => 'Tipo',
+            'processed' => 'Elaborato',
+            'exception' => 'Errore',
+            'created_at' => 'Ricevuto il',
+        ],
+        'filters' => [
+            'failed' => 'Con errore',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Invia documento',
+        'sync' => 'Sincronizza',
+        'download' => 'PDF firmato',
+        'resend' => 'Reinvia',
+        'create_link' => 'Crea link',
+        'reprocess' => 'Rielabora',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Documento in coda: comparirà qui appena Autentique lo avrà ricevuto.',
+        'synced' => 'Sincronizzazione in coda.',
+        'resent' => 'Richiesta di firma reinviata.',
+        'link_created' => 'Link di firma creato.',
+        'reprocessed' => 'Webhook in coda per l\'elaborazione.',
+        'failed' => 'Autentique ha restituito un errore',
+    ],
+];

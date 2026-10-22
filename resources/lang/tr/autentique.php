@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Belge',
+        'plural_label' => 'Belgeler',
+        'fields' => [
+            'name' => 'Ad',
+            'status' => 'Durum',
+            'signatures' => 'İmzalar',
+            'sandbox' => 'Sandbox',
+            'autentique_id' => 'Autentique kimliği',
+            'documentable' => 'Bağlı kayıt',
+            'created_at' => 'Oluşturulma',
+            'finished_at' => 'Tamamlanma',
+            'file' => 'Dosya',
+            'message' => 'İmzacılara mesaj',
+            'signers' => 'İmzacılar',
+            'email' => 'E-posta',
+            'signer_name' => 'Ad (imza bağlantısı, e-postasız)',
+            'action' => 'İşlem',
+            'refusable' => 'İmzacılar reddedebilir',
+            'sortable' => 'Yukarıdaki sırayla imzala',
+        ],
+        'status' => [
+            'pending' => 'Beklemede',
+            'signed' => 'İmzalandı',
+            'rejected' => 'Reddedildi',
+        ],
+    ],
+    'signature' => [
+        'label' => 'İmzacı',
+        'plural_label' => 'İmzacılar',
+        'fields' => [
+            'name' => 'Ad',
+            'email' => 'E-posta',
+            'action' => 'İşlem',
+            'link' => 'İmza bağlantısı',
+            'viewed_at' => 'Görüntülenme',
+            'signed_at' => 'İmzalanma',
+            'rejected_at' => 'Reddedilme',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'İmzala',
+        'SIGN_AS_A_WITNESS' => 'Tanık olarak imzala',
+        'APPROVE' => 'Onayla',
+        'RECOGNIZE' => 'Okundu olarak onayla',
+    ],
+    'webhook_call' => [
+        'label' => 'Webhook çağrısı',
+        'plural_label' => 'Webhook çağrıları',
+        'fields' => [
+            'event_id' => 'Olay',
+            'type' => 'Tür',
+            'processed' => 'İşlendi',
+            'exception' => 'Hata',
+            'created_at' => 'Alınma',
+        ],
+        'filters' => [
+            'failed' => 'Hatalı',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Belge gönder',
+        'sync' => 'Senkronize et',
+        'download' => 'İmzalı PDF',
+        'resend' => 'Yeniden gönder',
+        'create_link' => 'Bağlantı oluştur',
+        'reprocess' => 'Yeniden işle',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Belge kuyrukta: Autentique aldığında burada görünecek.',
+        'synced' => 'Senkronizasyon kuyruğa alındı.',
+        'resent' => 'İmza isteği yeniden gönderildi.',
+        'link_created' => 'İmza bağlantısı oluşturuldu.',
+        'reprocessed' => 'Webhook işlenmek üzere kuyruğa alındı.',
+        'failed' => 'Autentique bir hata döndürdü',
+    ],
+];

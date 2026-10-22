@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Document',
+        'plural_label' => 'Documents',
+        'fields' => [
+            'name' => 'Nom',
+            'status' => 'Statut',
+            'signatures' => 'Signatures',
+            'sandbox' => 'Sandbox',
+            'autentique_id' => 'ID Autentique',
+            'documentable' => 'Lié à',
+            'created_at' => 'Créé le',
+            'finished_at' => 'Terminé le',
+            'file' => 'Fichier',
+            'message' => 'Message aux signataires',
+            'signers' => 'Signataires',
+            'email' => 'E-mail',
+            'signer_name' => 'Nom (lien de signature, sans e-mail)',
+            'action' => 'Action',
+            'refusable' => 'Les signataires peuvent refuser',
+            'sortable' => 'Signer dans l\'ordre ci-dessus',
+        ],
+        'status' => [
+            'pending' => 'En attente',
+            'signed' => 'Signé',
+            'rejected' => 'Refusé',
+        ],
+    ],
+    'signature' => [
+        'label' => 'Signataire',
+        'plural_label' => 'Signataires',
+        'fields' => [
+            'name' => 'Nom',
+            'email' => 'E-mail',
+            'action' => 'Action',
+            'link' => 'Lien de signature',
+            'viewed_at' => 'Vu le',
+            'signed_at' => 'Signé le',
+            'rejected_at' => 'Refusé le',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'Signer',
+        'SIGN_AS_A_WITNESS' => 'Signer en tant que témoin',
+        'APPROVE' => 'Approuver',
+        'RECOGNIZE' => 'Prendre connaissance',
+    ],
+    'webhook_call' => [
+        'label' => 'Appel webhook',
+        'plural_label' => 'Appels webhook',
+        'fields' => [
+            'event_id' => 'Événement',
+            'type' => 'Type',
+            'processed' => 'Traité',
+            'exception' => 'Erreur',
+            'created_at' => 'Reçu le',
+        ],
+        'filters' => [
+            'failed' => 'En erreur',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Envoyer un document',
+        'sync' => 'Synchroniser',
+        'download' => 'PDF signé',
+        'resend' => 'Renvoyer',
+        'create_link' => 'Créer un lien',
+        'reprocess' => 'Retraiter',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Document en file d\'attente : il apparaîtra ici dès qu\'Autentique l\'aura reçu.',
+        'synced' => 'Synchronisation en file d\'attente.',
+        'resent' => 'Demande de signature renvoyée.',
+        'link_created' => 'Lien de signature créé.',
+        'reprocessed' => 'Webhook mis en file d\'attente pour traitement.',
+        'failed' => 'Autentique a renvoyé une erreur',
+    ],
+];

@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'Документ',
+        'plural_label' => 'Документи',
+        'fields' => [
+            'name' => 'Назва',
+            'status' => 'Статус',
+            'signatures' => 'Підписи',
+            'sandbox' => 'Пісочниця',
+            'autentique_id' => 'ID в Autentique',
+            'documentable' => 'Пов\'язаний з',
+            'created_at' => 'Створено',
+            'finished_at' => 'Завершено',
+            'file' => 'Файл',
+            'message' => 'Повідомлення підписантам',
+            'signers' => 'Підписанти',
+            'email' => 'Ел. пошта',
+            'signer_name' => 'Ім\'я (посилання для підпису, без ел. пошти)',
+            'action' => 'Дія',
+            'refusable' => 'Підписанти можуть відхилити',
+            'sortable' => 'Підписувати у вказаному порядку',
+        ],
+        'status' => [
+            'pending' => 'Очікує',
+            'signed' => 'Підписано',
+            'rejected' => 'Відхилено',
+        ],
+    ],
+    'signature' => [
+        'label' => 'Підписант',
+        'plural_label' => 'Підписанти',
+        'fields' => [
+            'name' => 'Ім\'я',
+            'email' => 'Ел. пошта',
+            'action' => 'Дія',
+            'link' => 'Посилання для підпису',
+            'viewed_at' => 'Переглянуто',
+            'signed_at' => 'Підписано',
+            'rejected_at' => 'Відхилено',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'Підписати',
+        'SIGN_AS_A_WITNESS' => 'Підписати як свідок',
+        'APPROVE' => 'Затвердити',
+        'RECOGNIZE' => 'Ознайомитися',
+    ],
+    'webhook_call' => [
+        'label' => 'Виклик вебхука',
+        'plural_label' => 'Виклики вебхуків',
+        'fields' => [
+            'event_id' => 'Подія',
+            'type' => 'Тип',
+            'processed' => 'Оброблено',
+            'exception' => 'Помилка',
+            'created_at' => 'Отримано',
+        ],
+        'filters' => [
+            'failed' => 'З помилкою',
+        ],
+    ],
+    'actions' => [
+        'send' => 'Надіслати документ',
+        'sync' => 'Синхронізувати',
+        'download' => 'Підписаний PDF',
+        'resend' => 'Надіслати повторно',
+        'create_link' => 'Створити посилання',
+        'reprocess' => 'Обробити повторно',
+        'payload' => 'Payload',
+    ],
+    'notifications' => [
+        'queued' => 'Документ у черзі: він з\'явиться тут, щойно Autentique його отримає.',
+        'synced' => 'Синхронізацію поставлено в чергу.',
+        'resent' => 'Запит на підпис надіслано повторно.',
+        'link_created' => 'Посилання для підпису створено.',
+        'reprocessed' => 'Вебхук поставлено в чергу на обробку.',
+        'failed' => 'Autentique повернув помилку',
+    ],
+];

@@ -1,0 +1,81 @@
+<?php
+
+return [
+    'document' => [
+        'label' => 'مستند',
+        'plural_label' => 'المستندات',
+        'fields' => [
+            'name' => 'الاسم',
+            'status' => 'الحالة',
+            'signatures' => 'التوقيعات',
+            'sandbox' => 'وضع الاختبار',
+            'autentique_id' => 'معرّف Autentique',
+            'documentable' => 'مرتبط بـ',
+            'created_at' => 'تاريخ الإنشاء',
+            'finished_at' => 'تاريخ الاكتمال',
+            'file' => 'الملف',
+            'message' => 'رسالة إلى الموقّعين',
+            'signers' => 'الموقّعون',
+            'email' => 'البريد الإلكتروني',
+            'signer_name' => 'الاسم (رابط التوقيع، بدون بريد إلكتروني)',
+            'action' => 'الإجراء',
+            'refusable' => 'يمكن للموقّعين الرفض',
+            'sortable' => 'التوقيع بالترتيب أعلاه',
+        ],
+        'status' => [
+            'pending' => 'قيد الانتظار',
+            'signed' => 'موقَّع',
+            'rejected' => 'مرفوض',
+        ],
+    ],
+    'signature' => [
+        'label' => 'الموقِّع',
+        'plural_label' => 'الموقّعون',
+        'fields' => [
+            'name' => 'الاسم',
+            'email' => 'البريد الإلكتروني',
+            'action' => 'الإجراء',
+            'link' => 'رابط التوقيع',
+            'viewed_at' => 'تاريخ العرض',
+            'signed_at' => 'تاريخ التوقيع',
+            'rejected_at' => 'تاريخ الرفض',
+        ],
+    ],
+    'signer_actions' => [
+        'SIGN' => 'توقيع',
+        'SIGN_AS_A_WITNESS' => 'التوقيع كشاهد',
+        'APPROVE' => 'موافقة',
+        'RECOGNIZE' => 'إقرار بالاطلاع',
+    ],
+    'webhook_call' => [
+        'label' => 'استدعاء Webhook',
+        'plural_label' => 'استدعاءات Webhook',
+        'fields' => [
+            'event_id' => 'الحدث',
+            'type' => 'النوع',
+            'processed' => 'تمت المعالجة',
+            'exception' => 'الخطأ',
+            'created_at' => 'تاريخ الاستلام',
+        ],
+        'filters' => [
+            'failed' => 'فاشلة',
+        ],
+    ],
+    'actions' => [
+        'send' => 'إرسال مستند',
+        'sync' => 'مزامنة',
+        'download' => 'ملف PDF الموقّع',
+        'resend' => 'إعادة الإرسال',
+        'create_link' => 'إنشاء رابط',
+        'reprocess' => 'إعادة المعالجة',
+        'payload' => 'البيانات (Payload)',
+    ],
+    'notifications' => [
+        'queued' => 'المستند في قائمة الانتظار: سيظهر هنا بمجرد أن تستلمه Autentique.',
+        'synced' => 'تمت جدولة المزامنة.',
+        'resent' => 'تمت إعادة إرسال طلب التوقيع.',
+        'link_created' => 'تم إنشاء رابط التوقيع.',
+        'reprocessed' => 'تمت جدولة الـ Webhook للمعالجة.',
+        'failed' => 'أعادت Autentique خطأ',
+    ],
+];

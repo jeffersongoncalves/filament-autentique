@@ -25,7 +25,7 @@ Built on [jeffersongoncalves/laravel-autentique](https://github.com/jeffersongon
 - **Signers** — viewed/signed/rejected times, copyable signature links, **resend** the request and **create a link** for open signers.
 - **Signed PDF** download, **sync** from the API, and **delete** (at Autentique first, then locally).
 - **Webhook calls** — every webhook received, its payload, errors and a **reprocess** action.
-- English and Brazilian Portuguese, Filament 3, 4 and 5.
+- **19 languages**, Filament 3, 4 and 5.
 
 ## Compatibility
 
