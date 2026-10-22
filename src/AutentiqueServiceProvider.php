@@ -11,8 +11,6 @@ class AutentiqueServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('filament-autentique')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigrations();
+            ->hasTranslations();
     }
 }
